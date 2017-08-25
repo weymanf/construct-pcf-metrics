@@ -1,0 +1,1 @@
+A default flyrc for the concource.ci CLI tool

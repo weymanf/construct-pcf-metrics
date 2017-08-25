@@ -1,0 +1,1 @@
+Install all the cloud ops repositories by running the simple command all_the_repos

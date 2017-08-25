@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+  echo -e "\x1b[91mIncorrect number of arguments\nUsage: curldebug <url>\x1b[39m" 1>&2
+  exit 1
+fi
+
+target=$1
+echo -e "\x1b[93mDebugging request for ${target}\x1b[39m" 1>&2
+
+curl -w "time_namelookup=%{time_namelookup}
+time_appconnect=%{time_appconnect}
+time_connect=%{time_connect}
+time_redirect=%{time_redirect}
+time_pretransfer=%{time_pretransfer}
+time_starttransfer=%{time_starttransfer}
+time_total=%{time_total}
+" -o /dev/null -s "$target"

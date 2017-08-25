@@ -1,0 +1,18 @@
+#!/bin/sh
+
+targetlocation=$HOME/workspace
+arrayofrepos=`cat $HOME/.all_the_reposrc`
+ssh -o StrictHostKeyChecking=false -T git@github.com;
+SSH_STATUS=$?;
+if [[ $SSH_STATUS != 1 ]]; then
+    echo "Please check if you have loaded your github ssh key";
+    return $SSH_STATUS;
+fi;
+
+mkdir -p $targetlocation;
+
+for i in $arrayofrepos
+do
+  reponame=${i#*/}
+  test -d $targetlocation/$reponame || git clone --recursive --shallow-submodules git@github.com:$i.git $targetlocation/$reponame
+done;

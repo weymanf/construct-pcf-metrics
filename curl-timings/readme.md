@@ -1,0 +1,1 @@
+Curl timing will output time stats for various steps of the curl request.

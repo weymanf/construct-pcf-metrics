@@ -1,0 +1,1 @@
+A simple configuration for zshrc for use on cloudops

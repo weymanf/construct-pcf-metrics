@@ -1,0 +1,1 @@
+A script for logging into cf automatically

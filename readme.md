@@ -19,6 +19,12 @@ to your GitHub account.
 
 2. Download the current zip from master:
 
+```
+curl -0L https://github.com/toddboom/construct-pcf-metrics/archive/master.zip > /tmp/construct.zip
+unzip /tmp/construct.zip -d /tmp
+cd /tmp/construct-pcf-metrics-master
+./construct
+```
 
 Install construct
 

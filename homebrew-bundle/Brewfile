@@ -32,6 +32,10 @@ brew "bosh-cli"
 tap "git-duet/tap"
 brew "git-duet"
 
+tap "starkandwayne/cf"
+brew "yaml2json"
+brew "spiff"
+
 tap "caskroom/cask"
 cask "atom"
 cask "docker-gui"

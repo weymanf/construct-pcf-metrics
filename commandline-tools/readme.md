@@ -1,1 +1,1 @@
-OSX Complier and other useful programmer tools.
+C/C++ compiler and other useful development tools.

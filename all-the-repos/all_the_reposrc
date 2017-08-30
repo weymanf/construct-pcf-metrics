@@ -14,3 +14,4 @@ pivotal-cf/pcf-tile-pipeline
 pivotal-cf/pivotal-ui
 pivotal-cf/pivotal_ide_prefs
 pivotal-cf-experimental/metrics-sample-apps
+toddboom/construct-pcf-metrics

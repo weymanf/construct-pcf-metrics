@@ -1,1 +1,1 @@
-A default flyrc for the concource.ci CLI tool
+A default flyrc for the Concourse CLI

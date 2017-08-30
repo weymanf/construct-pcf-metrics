@@ -23,7 +23,7 @@ brew "ruby-install"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
-brew "vim"
+brew "vim", args: ["with-lua"]
 brew "watch"
 brew "wget"
 brew "yarn"

@@ -2,8 +2,10 @@
 
 set -e # Exit if any command fails
 
+# Pull down all the project repos into ~/workspace
 all_the_repos
 
+# Run the install scripts for the relevant IDE preferences
 cd ~/workspace/pivotal-ide-prefs
 cli/bin/ide_prefs install --ide=intellij
 cli/bin/ide_prefs install --ide=webstorm

@@ -37,7 +37,10 @@ Once everything has finished installing, you can delete `/tmp/construct.zip` and
 Once all units are installed, you can run `all_the_repos` to pull down all your team-specific
 repositories.
 
-### 4. 
+### 4. Restart your computer
+
+It's a good idea to restart after everything is successfully installed. This will
+make sure all of the keyboard settings get picked up correctly.
 
 ## Usage & Development
 

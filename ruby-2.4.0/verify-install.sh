@@ -1,1 +1,0 @@
-[[ -d $HOME/.rubies/ruby-2.4.0 ]]

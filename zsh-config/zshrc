@@ -10,14 +10,13 @@ HYPHEN_INSENSITIVE="true"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git chruby ruby)
+plugins=(git chruby ruby aliases)
 
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $HOME/.zprofile
-
 source $ZSH/oh-my-zsh.sh
 
 # RPROMPT="hay"
@@ -37,10 +36,6 @@ chruby 2.2.4
 
 # Fuzzy completion for history
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#Docker machine default config
-#requires ruinning docker-machine start
-#eval $(docker-machine env default)
 
 HOMEBREW_GITHUB_API_TOKEN="35e20d8c268682a33236eb50bdfacaac377719a0"
 

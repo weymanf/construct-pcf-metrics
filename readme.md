@@ -10,14 +10,18 @@ modify for your own team!
 This will work the best if you have a freshly installed machine (i.e. you don't even have Homebrew or git installed yet),
 so here are some quick steps to get this bootstrapped with minimal fuss.
 
-1. Activate your personal GitHub SSH key using `ssh-add`. If you don't have a key set up yet,
+### 1. Set up your SSH key
+
+Activate your personal GitHub SSH key using `ssh-add`. If you don't have a key set up yet,
 talk to someone on your team about getting set up with a USB flash drive for your keys.
 It's really handy. In a pinch, you can just do `ssh-keygen` and add the generated `~/.ssh/id_rsa.pub`
 to your GitHub account.
 
 *If you're new to the team, you'll also want to make sure you get added to the team-specific repos because most of them are private. You can alternatively have someone else use their SSH key for this step.*
 
-2. Download the current zip from master:
+### 2. Download the current zip from GitHub
+
+To get things bootstrapped, you can pull the most recent archive from master:
 
 ```
 curl -0L https://github.com/toddboom/construct-pcf-metrics/archive/master.zip > /tmp/construct.zip
@@ -26,18 +30,14 @@ cd /tmp/construct-pcf-metrics-master
 ./construct
 ```
 
-Install construct
+Once everything has finished installing, you can delete `/tmp/construct.zip` and `/tmp/construct-pcf-metrics-master`.
 
-  git clone git@github.com:pivotal-cloudops/construct.git
+### 3. Pull down the repos
 
-Then run it
+Once all units are installed, you can run `all_the_repos` to pull down all your team-specific
+repositories.
 
-    ./construct
-
-## construct Your Machine
-
-
-Construct supports blacklisting units for special installation needs: units in `_blacklist` will be skipped
+### 4. 
 
 ## Usage & Development
 
@@ -48,9 +48,9 @@ sets up **one** aspect of the machine. That's why it's called a unit.
 
 Units have four kind of files (that construct cares about):
 
-* `readme.md` - Describes why this unit is included in construct.
+* `README.md` - Describes why this unit is included in construct.
 * `install.sh` - A shell script which installs the unit.
-* `verify-install.sh` - A shell script which exits with zero when the unit is installed.
+* `verify-install.sh` - (Optional) A shell script which exits with zero when the unit is installed.
 * `deps` - A file which lists the dependencies this unit has on other units.
 
 Run your unit with `install-unit unit-name`. Run all units with `construct`.
@@ -58,6 +58,10 @@ Run your unit with `install-unit unit-name`. Run all units with `construct`.
 For convenience, you can specify which units should run first (instead of
 just letting construct work it out from the dependency graph) by putting their
 names in the `priority-units` file.
+
+## Notes
+
+Construct supports blacklisting units for special installation needs: units in `_blacklist` will be skipped
 
 ## The Way of construct
 

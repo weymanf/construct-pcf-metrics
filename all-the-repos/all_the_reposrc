@@ -12,6 +12,6 @@ pivotal-cf/metrics-env-locks
 pivotal-cf/metrics-release
 pivotal-cf/pcf-tile-pipeline
 pivotal-cf/pivotal-ui
-pivotal-cf/pivotal_ide_prefs
+pivotal/pivotal_ide_prefs
 pivotal-cf-experimental/metrics-sample-apps
 toddboom/construct-pcf-metrics

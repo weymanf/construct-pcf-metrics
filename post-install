@@ -6,7 +6,12 @@ set -e # Exit if any command fails
 all_the_repos
 
 # Run the install scripts for the relevant IDE preferences
-cd ~/workspace/pivotal-ide-prefs
-cli/bin/ide_prefs install --ide=intellij
-cli/bin/ide_prefs install --ide=webstorm
-cli/bin/ide_prefs install --ide=gogland
+cd ~/workspace/pivotal_ide_prefs/cli
+
+bin/ide_prefs install --ide=intellij
+bin/ide_prefs install --ide=webstorm
+bin/ide_prefs install --ide=gogland
+
+cd ~/workspace/apm-ui
+yarn add global node-gyp
+yarn

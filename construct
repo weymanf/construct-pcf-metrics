@@ -14,4 +14,9 @@ priority_units=`cat priority-units | grep -v '^#'`
 all_units=`ls -d */ | grep -v '^_' | sed 's/\///'`
 ./install-unit $all_units
 
+osascript \
+-e 'tell application "iTerm" to activate' \
+-e 'tell application "System Events" to tell process "iTerm" to keystroke "cd ~/workspace/construct-pcf-metrics; ./post-install"' \
+-e 'tell application "System Events" to tell process "iTerm" to key code 52'
+
 ./post-install

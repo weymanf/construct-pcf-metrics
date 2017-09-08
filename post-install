@@ -14,4 +14,11 @@ bin/ide_prefs install --ide=gogland
 
 cd ~/workspace/apm-ui
 yarn add global node-gyp
+yarn add global gulp
 yarn
+
+cd ~/workspace/metrics-app-dev-release
+direnv allow
+source .envrc
+go get github.com/onsi/ginkgo/ginkgo
+go get github.com/onsi/gomega

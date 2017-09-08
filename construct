@@ -18,5 +18,3 @@ osascript \
 -e 'tell application "iTerm" to activate' \
 -e 'tell application "System Events" to tell process "iTerm" to keystroke "cd ~/workspace/construct-pcf-metrics; ./post-install"' \
 -e 'tell application "System Events" to tell process "iTerm" to key code 52'
-
-./post-install

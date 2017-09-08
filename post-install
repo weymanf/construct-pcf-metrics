@@ -19,6 +19,5 @@ yarn
 
 cd ~/workspace/metrics-app-dev-release
 direnv allow
-source .envrc
 go get github.com/onsi/ginkgo/ginkgo
 go get github.com/onsi/gomega

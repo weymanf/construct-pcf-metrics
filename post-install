@@ -13,8 +13,8 @@ bin/ide_prefs install --ide=webstorm
 bin/ide_prefs install --ide=gogland
 
 cd ~/workspace/apm-ui
-yarn add global node-gyp
-yarn add global gulp
+yarn global add node-gyp
+yarn global add gulp
 yarn
 
 cd ~/workspace/metrics-app-dev-release

@@ -28,6 +28,9 @@ brew "vim"
 brew "watch"
 brew "wget"
 
+tap "homebrew/versions"
+brew "firefoxnightly"
+
 tap "cloudfoundry/tap"
 brew "cf-cli"
 brew "bosh-cli"
@@ -51,6 +54,7 @@ cask "shiftit"
 cask "slack"
 cask "sublime-text"
 cask "time-out"
+cask "tunnelblick"
 cask "vagrant"
 cask "virtualbox"
 cask "webstorm"
@@ -58,4 +62,3 @@ cask "xscreensaver"
 
 # possibly optional?
 cask "istat-menus"
-cask "tunnelblick"

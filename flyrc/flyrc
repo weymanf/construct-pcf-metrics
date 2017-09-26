@@ -2,3 +2,6 @@ targets:
   lakitu:
     api: https://concourse.lakitu.cf-app.com
     insecure: true
+  concourse:
+    api: https://pcf-metrics.ci.cf-app.com
+    insecure: true

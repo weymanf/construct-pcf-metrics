@@ -35,6 +35,7 @@ brew "firefoxnightly"
 tap "cloudfoundry/tap"
 brew "cf-cli"
 brew "bosh-cli"
+brew "bbl"
 
 tap "git-duet/tap"
 brew "git-duet"
